@@ -1,17 +1,17 @@
 .logo {
-  margin-top: 11px;
-  width: 105px;
+  padding-top: .41rem;
+  width: 12.7rem;
 }
 
 @media (min-width: 320px) {
   .logo {
-    margin: 11px auto;
+    margin: 1.2rem auto;
   }
 }
 
 @media (min-width: 500px) {
   .logo {
-    margin: 11px 50px;
+    margin: 11px 0px;
   }
 }
 .st0 path {
@@ -52,7 +52,7 @@
     stroke-dashoffset: 1000;
   }
   50% {
-    fill-opactity: .3;
+    fill-opacity: .3;
   }
   100% {
     fill-opacity: 1;
