@@ -33,7 +33,7 @@
   text-align: center;
   padding: 0 .9rem;
 }
-
+/* media queries */
 @media (max-width: 1050px) {
   .step {
     width: 50%;

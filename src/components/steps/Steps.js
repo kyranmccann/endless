@@ -12,7 +12,7 @@ export const Steps = () => {
     getSteps()
     .then(data =>{
       //sort steps received from api
-      data = sortAndFilter(data); 
+      data = sortAndFilter(data);
       setSteps(data)
     })
   }, [])

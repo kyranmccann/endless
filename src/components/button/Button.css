@@ -26,6 +26,8 @@
 .btn.base:focus {
   background-color: #7EECD4;
 }
+
+/* increasing height to industry recommended for touch interaction */
 @media (max-width: 500px) {
   .btn {
     min-height: 48px;

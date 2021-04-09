@@ -5,26 +5,21 @@ import large from '../../assets/jpg/hero/photo-couch_2x.jpg';
 import './Hero.css';
 
 export default function Hero() {
+  //setting width to use to determine which image to render
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
+    //define function
     const handleResize = () => setWidth(window.innerWidth);
+    //add listener
     window.addEventListener("resize", handleResize);
-
+    //cleanup in return
     return () => window.removeEventListener("resize", handleResize);
   }, [])
 
-  let styleObject = {
-    backgroundImage: `url(${small})`
-  }
-  console.log(width)
-  if (width > 1150) {
-    styleObject.backgroundImage = `url(${large})`
-  }
-
   return (
     <div className="hero monthly-packages-hero">
-      <div className="image" style={ styleObject }>
+      <div className="image" style={{ backgroundImage: width > 1150 ? `url(${large})` : `url(${small})` }}>
         <div className="hero-text content-container">
           <h4 className="sub">New Games & Accessories</h4>
           <h2 className='headline'>Monthly packages.<br /> Excitement delivered daily.</h2>
