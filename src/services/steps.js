@@ -3,6 +3,6 @@ export const getSteps = () => {
     .then(data =>
       data.json()
     ).catch(err =>
-      console.log(err); 
-    )
+      console.log(err)
+    );
 }
