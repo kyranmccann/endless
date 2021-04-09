@@ -10,6 +10,6 @@ You can run the application with the `yarn start` command.
 
 Run `yarn test` in order to run the test suite.
 
-##Spinner Animation
+### Spinner Animation
 
 By Loading.io (it and others can be found [here](https://loading.io/css/))
