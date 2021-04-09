@@ -1,0 +1,34 @@
+.btn {
+  border: none;
+  border-radius: 1.8rem;
+  letter-spacing: 0.07rem;
+  min-height: 35px;
+  min-width: 168px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: background-color 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn.base {
+  background-color: #47E4C2;
+  color: #2F3237;
+}
+
+.btn:active {
+  filter: brightness(75%);
+}
+
+.btn.base:hover,
+.btn.base:focus {
+  background-color: #7EECD4;
+}
+@media (max-width: 500px) {
+  .btn {
+    min-height: 48px;
+    min-width: 200px;
+  }
+}
