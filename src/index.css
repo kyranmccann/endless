@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"),
+    url("./fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"),
+    url("./fonts/Lato-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"),
+    url("./fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
