@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './fonts/Lato-Regular.ttf';
+import './fonts/Lato-Light.ttf';
+import './fonts/Lato-Bold.ttf'; 
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
