@@ -18,12 +18,12 @@ export const Steps = () => {
       //set state
       setLoading(false);
       setSteps(data);
-    })
+    });
   }, [])
 
 
   return (
-    <div className='content-container'>
+    <div id="how-it-works" className='content-container'>
     <h3 className='section-title'>How It Works</h3>
       <div className="steps">
       {loading ? <Spinner /> : steps.length && steps.map(step => {

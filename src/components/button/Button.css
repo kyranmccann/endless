@@ -7,9 +7,11 @@
   font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
+  position: relative;
   text-transform: uppercase;
+  outline: none;
   overflow: hidden;
-  transition: background-color 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
   cursor: pointer;
 }
 
@@ -18,19 +20,14 @@
   color: #2F3237;
 }
 
-.btn:active {
-  filter: brightness(75%);
+.btn.base:active {
+  background-color: #237261;
+  color: #47E4C2;
+  transition: 0.1s; 
 }
 
 .btn.base:hover,
 .btn.base:focus {
-  background-color: #7EECD4;
-}
-
-/* increasing height to industry recommended for touch interaction */
-@media (max-width: 500px) {
-  .btn {
-    min-height: 48px;
-    min-width: 200px;
-  }
+  background-color: #B5F4e6;
+  border: 3px solid #47E4C2;
 }
