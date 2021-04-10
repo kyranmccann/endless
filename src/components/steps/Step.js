@@ -2,7 +2,7 @@ import './Step.css';
 
 export const Step = ({ step }) => {
   const formatStepNumber = (n) => {
-    return n < 10 ? '0' + n : n
+    return n < 10 ? '0' + n : n;
   }
   return (
     <div className="step">
