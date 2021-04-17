@@ -26,7 +26,7 @@ export const Steps = () => {
     <div id="how-it-works" className='content-container'>
     <h3 className='section-title'>How It Works</h3>
       <div className="steps">
-      {loading ? <Spinner /> : steps.length && steps.map(step => {
+      {loading || !steps.length ? <Spinner /> : steps.length && steps.map(step => {
         return (
           <Step key={step.id} step={step} />
         )

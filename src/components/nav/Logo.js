@@ -1,8 +1,8 @@
 import { ReactComponent as SVGLogo } from '../../assets/logo/logo-endless.svg';
 import './Logo.css';
 
-export const Logo = () => {
+export const Logo = ({ className }) => {
   return (
-    <div className="logo"><SVGLogo /></div>
+    <div className={`logo ${className}`}><SVGLogo /></div>
   )
 }

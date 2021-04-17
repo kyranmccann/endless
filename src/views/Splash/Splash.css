@@ -1,0 +1,51 @@
+
+.splash .logo {
+    margin-top: 10%; 
+    width: 50%; 
+}
+
+.splash .st0 path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+.st0 path:nth-of-type(1) {
+    animation: dash 4s linear forwards;
+  }
+  
+  .st0 path:nth-of-type(2) {
+    animation: dash 4s linear 1s forwards;
+  }
+  .st0 path:nth-of-type(3) {
+    animation: dash 4s linear 1.5s forwards;
+  }
+  .st0 path:nth-of-type(4) {
+    animation: dash 4s linear 2s forwards;
+  }
+  .st0 path:nth-of-type(5) {
+    animation: dash 4s linear 2.5s forwards;
+  }
+  .st0 path:nth-of-type(6) {
+    animation: dash 4s linear 3s forwards;
+  }
+  .st0 path:nth-of-type(7) {
+    animation: dash 4s linear 3.5s forwards;
+  }
+
+  
+  @keyframes dash {
+    0% {
+      fill-opacity: 0;
+      stroke-dashoffset: 1000;
+    }
+    50% {
+      fill-opacity: .3;
+    }
+    100% {
+      fill-opacity: 1;
+      stroke-dashoffset: 0;
+      stroke-width: 0;
+    }
+  }
+
+
+
