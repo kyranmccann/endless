@@ -39,7 +39,7 @@ function Splash({ setLoaded, show }) {
 
     const timer3 = setTimeout(() => {
       setLoaded({ page: true, splash: false });  
-    }, 8000); 
+    }, 80000); 
 
     return () => {
       clearTimeout(timer);
