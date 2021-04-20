@@ -125,7 +125,7 @@
   }
 
   .hero .hero-text .text {
-    width: 90%;
+    width: 85%; 
   }
 }
 
@@ -135,11 +135,14 @@
   }
 
   .hero .hero-text .headline {
+    margin-bottom: 1.3rem;
     margin-top: 1rem;
   }
 
   .hero .hero-text .text {
+    margin-bottom: 1.5rem;
     margin-top: 3rem;
+    width: 90%; 
   }
 }
 
@@ -149,7 +152,12 @@
   }
 
   .hero .hero-text {
-    width: 95%;
+    padding-top: 10rem; 
+  }
+
+  .hero .hero-text .headline {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
 
@@ -159,6 +167,6 @@
   }
   .hero .hero-text .text {
     margin-top: .5rem;
-    width: 100%;
+    width: 95%;
   }
 }
