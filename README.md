@@ -17,5 +17,5 @@ In case of very, very slow internet there is still a fallback for the hero that 
 
 The animated loader featured on the splash page will also display in the place of the steps content if the api call has not returned by the splash page timeout. 
 
-To view those ui features in their natural habitat, comment out the Splash component in App.js. 
+To view those ui features in their natural habitat, comment out the Splash component in App.js and use chrome dev tools to slow the network speed to slow 3G (open dev tools, navigate to the network tab, and change the dropdown that defaults to "No throttling" to "Slow 3G"). 
 
