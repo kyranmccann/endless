@@ -16,7 +16,12 @@
   background-color: #47E4C2;
   height: 3px;
   margin: 1rem auto;
+  transition: all .3s ease-in-out; 
   width: 23.7%;
+}
+
+.step:hover .underline {
+  width: 35%; 
 }
 
 .step .title {
