@@ -11,7 +11,7 @@ You can run the application with the `yarn start` command.
 Run `yarn test` in order to run the test suite.
 
 ##Some Choices Made
-I chose to use a splash screen on a timeout function so that all images and api calls have already loaded when a user sees the full site. 
+I chose to use a splash screen on a timeout function so that all images and api calls have already loaded when a user sees the full site. I chose to use react-transition-group to facilitate mounting and unmounting the splash page, but all of the animations for the logo, loader, and button hovers are done with pure CSS. 
 
 In case of very, very slow internet there is still a fallback for the hero that loads a solid color box (I chose a dark color from the image to make the transition easier on the eyes) until the image has loaded. 
 
