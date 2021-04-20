@@ -1,8 +1,8 @@
 .step {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
-  align-items: center;
   width: 25%;
 }
 
@@ -30,58 +30,67 @@
   letter-spacing: .037rem;
   line-height: 1.4;
   margin: 1.2rem auto;
-  text-align: center;
   padding: 0 .9rem;
+  text-align: center;
 }
+
 /* media queries */
 @media (max-width: 1050px) {
   .step {
-    width: 50%;
     padding: 0 12%;
+    width: 50%;
   }
 }
+
 @media (max-width: 1000px) {
   .step {
-    width: 50%;
     padding: 0 10%;
+    width: 50%;
   }
 }
+
 @media (max-width: 875px) {
   .step {
-    width: 50%;
     padding: 0 8%;
+    width: 50%;
   }
 }
+
 @media (max-width: 780px) {
   .step {
-    width: 50%;
     padding: 0 6%;
+    width: 50%;
   }
 }
+
 @media (max-width: 765px) {
   .step {
-    width: 50%;
     padding: 0 4%;
+    width: 50%;
   }
 }
+
 @media (max-width: 650px) {
   .step {
-    width: 60%;
     padding: 0 5%;
+    width: 60%;
   }
 }
+
 @media (max-width: 475px) {
   .step {
-    width: 70%;
     padding: 0 5%;
+    width: 70%;
   }
 }
+
 @media (max-width: 415px) {
   .step {
-    width: 80%;
     padding: 0 5%;
+    width: 80%;
   }
 }
+
 @media (max-width: 340px) {
   .step {
     width: 90%;

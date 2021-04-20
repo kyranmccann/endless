@@ -1,12 +1,13 @@
 .steps {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   padding: 1.7rem 0 6rem;
   width: 100%;
 }
 
+/* media queries */
 @media (max-width: 1050px) {
   .steps {
     flex-wrap: wrap;

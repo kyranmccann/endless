@@ -1,9 +1,8 @@
 #outline {
+  animation: loading 1.6s linear infinite;
   stroke: #47E4C2; 
-  stroke-dasharray: 2.42777px, 242.77666px;
-  stroke-dashoffset: 0;
-  -webkit-animation: loading 1.6s linear infinite;
-          animation: loading 1.6s linear infinite;
+  stroke-dasharray: 2.4px, 243px;
+  stroke-dashoffset: 0;   
   }
 
   #outline-bg {

@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
-import { Step } from './Step.js';
-import { Spinner } from '../loading/Spinner.js';
+import React, { useEffect, useState } from 'react';
+import Step from './Step.js';
+import Loader from '../loading/Loader.js';
 import { getSteps } from '../../services/steps.js';
 import { sortAndFilter } from './helpers.js';
 import './Steps.css';
 
-export const Steps = () => {
+function Steps() {
   const [steps, setSteps] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -23,15 +23,17 @@ export const Steps = () => {
 
 
   return (
-    <div id="how-it-works" className='content-container'>
+    <section id="how-it-works" className='content-container'>
     <h3 className='section-title'>How It Works</h3>
       <div className="steps">
-      {loading || !steps.length ? <Spinner /> : steps.length && steps.map(step => {
+      {loading ? <Loader /> : steps.length && steps.map(step => {
         return (
           <Step key={step.id} step={step} />
         )
       })}
       </div>
-    </div>
+    </section>
   )
 }
+
+export default React.memo(Steps); 

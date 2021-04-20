@@ -1,6 +1,7 @@
+import React from 'react'
 import './Step.css';
 
-export const Step = ({ step }) => {
+function Step({ step }) {
   const formatStepNumber = (n) => {
     return n < 10 ? '0' + n : n;
   }
@@ -13,3 +14,5 @@ export const Step = ({ step }) => {
     </div>
   )
 }
+
+export default React.memo(Step); 

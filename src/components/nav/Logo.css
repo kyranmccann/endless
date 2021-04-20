@@ -3,24 +3,83 @@
   width: 12.7rem;
 }
 
+.logo .st0 path {
+  fill: #47E4C2;
+  stroke: #47E4C2;
+  stroke-width: 2;
+}
+
+.logo.nav-logo .st0 path {
+  fill-opacity: 1; 
+}
+ 
+.splash .logo {
+  margin-top: 10%; 
+  width: 50%; 
+}
+
+.splash .st0 path {
+stroke-dasharray: 1000;
+stroke-dashoffset: 1000;
+fill-opacity: 0; 
+}
+
+.splash .st0 path:nth-of-type(1) {
+  animation: draw 4s linear forwards;
+}  
+
+.splash .st0 path:nth-of-type(2) {
+animation: draw 4s linear 1s forwards;
+}
+
+.splash .st0 path:nth-of-type(3) {
+animation: draw 4s linear 1.5s forwards;
+}
+
+.splash .st0 path:nth-of-type(4) {
+animation: draw 4s linear 2s forwards;
+}
+
+.splash .st0 path:nth-of-type(5) {
+animation: draw 4s linear 2.5s forwards;
+}
+
+.splash .st0 path:nth-of-type(6) {
+animation: draw 4s linear 3s forwards;
+}
+
+.splash .st0 path:nth-of-type(7) {
+animation: draw 4s linear 3.5s forwards; 
+}
+
+/* media queries */
 @media (min-width: 320px) {
-  .logo {
+  .logo.nav-logo {
     margin: 1.2rem auto;
   }
 }
 
 @media (min-width: 500px) {
-  .logo {
+  .logo.nav-logo {
     margin: 11px 0px;
   }
 }
-.st0 path {
-  fill: #47E4C2;
-  fill-opacity: 0;
-  stroke: #47E4C2;
-  /* stroke-dasharray: 1000;
-  stroke-dashoffset: 1000; */
-  stroke-width: 2;
+
+/* animation */
+@keyframes draw {
+  0% {
+    fill-opacity: 0;
+    stroke-dashoffset: 1000;
+  }
+  50% {
+    fill-opacity: .3;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+  }
 }
+
 
 
