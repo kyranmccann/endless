@@ -39,15 +39,15 @@
 }
 
 .btn.base:hover .btn-hover.top:before, .btn.base:hover .btn-hover.top:after {
-  animation: top 0.1s;
+  animation: top 0.2s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.4, 0.57, 0.54, 1);
   opacity: 1;
 }
 
 .btn.base:hover .btn-hover.btm:before, .btn.base:hover .btn-hover.btm:after {
-  animation: bottom 0.1s;
-  animation-delay: 0.1s;
+  animation: bottom 0.2s;
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.4, 0.57, 0.54, 1);
   opacity: 1;
