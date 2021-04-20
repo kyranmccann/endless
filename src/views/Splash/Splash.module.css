@@ -13,7 +13,7 @@
 }
 
 .Logo.Enter {
-  animation: enter .1s ease-out; 
+  animation: enter .3s ease-out; 
 }
 
 .Logo.Exit {
