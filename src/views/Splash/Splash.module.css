@@ -17,7 +17,7 @@
 }
 
 .Logo.Exit {
-    animation: exit .3s ease-out;
+    animation: exit .5s ease-out;
 }
 
 @keyframes enter {

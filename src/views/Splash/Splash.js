@@ -34,12 +34,17 @@ function Splash({ setLoaded, show }) {
     }, 500);
 
     const timer2 = setTimeout(() => {
+      setPhase(3) 
+    }, 7500); 
+
+    const timer3 = setTimeout(() => {
       setLoaded({ page: true, splash: false });  
     }, 8000); 
 
     return () => {
       clearTimeout(timer);
       clearTimeout(timer2); 
+      clearTimeout(timer3); 
     };
   }, [setLoaded]);
 
