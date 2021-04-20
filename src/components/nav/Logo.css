@@ -53,15 +53,21 @@ animation: draw 4s linear 3.5s forwards;
 }
 
 /* media queries */
-@media (min-width: 320px) {
-  .logo.nav-logo {
-    margin: 1.2rem auto;
+@media (max-width: 800px) {
+  .splash .logo { 
+    width: 70%; 
   }
 }
 
-@media (min-width: 500px) {
-  .logo.nav-logo {
-    margin: 11px 0px;
+@media (max-width: 650px) {
+  .logo.nav-logo { 
+    margin: 1rem auto; 
+  }
+}
+
+@media (max-width: 600px) {
+  .splash .logo { 
+    width: 90%; 
   }
 }
 

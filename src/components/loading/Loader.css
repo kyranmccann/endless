@@ -13,6 +13,37 @@
     stroke: #222222; 
   }
 
+  @media (max-width: 600px) {
+    .steps .loader {
+      width: 250px; 
+    }
+
+    .splash .loader {
+      width: 250px; 
+    }
+  }
+
+  @media (max-width: 500px) {
+    .steps .loader {
+      width: 200px; 
+    }
+
+    .splash .loader {
+      width: 200px; 
+    }
+  }
+
+  @media (max-width: 400px) {
+    .steps .loader {
+      width: 150px; 
+    }
+
+    .splash .loader {
+      width: 150px; 
+    }
+  }
+
+  /* animations */
   @keyframes loading {
     10% {
         stroke-dasharray: 35px, 243px;
