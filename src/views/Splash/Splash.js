@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Transition } from 'react-transition-group';
 import Logo from '../../components/nav/Logo.js';
 import Loader from '../../components/loading/Loader.js'; 
-import { Transition } from 'react-transition-group';
 
 import classes from './Splash.module.css';
 
@@ -25,6 +25,7 @@ const transitionStyles = {
 
 function Splash({ setLoaded, show }) {
   const [phase, setPhase] = useState(1);
+  const nodeRef = useRef(null); 
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -43,7 +44,7 @@ function Splash({ setLoaded, show }) {
   }, [setLoaded]);
 
   return (
-    <Transition in={show} timeout={500} unmountOnExit>
+    <Transition nodeRef={nodeRef} in={show} timeout={500} unmountOnExit>
       {(state) => (
         <div
           className={`${classes.Splash} splash`}
