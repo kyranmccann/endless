@@ -3,6 +3,10 @@
   width: 12.7rem;
 }
 
+.logo.nav-logo {
+  margin-top: 1.1rem;
+}
+
 .logo .st0 path {
   fill: #47E4C2;
   stroke: #47E4C2;
