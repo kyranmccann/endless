@@ -1,10 +1,20 @@
+import React from 'react'; 
 import './Button.css';
-export const Button = ({ text, type }) => {
+
+function Button({ text, type }) {
   return (
-    <a href="#how-it-works">
-      <button className={`btn ${type}`}>
-        {text}
-      </button>
-    </a>
+    <div className={`btn ${type}`}>
+      <a href="#how-it-works">
+        <p>
+          {text}
+        </p>
+        <div className="btn-hover top" />
+        <div className="btn-hover btm" />
+      </a>
+    </div>
   )
 }
+
+// export default React.memo(Button);
+
+export default React.memo(Button); 

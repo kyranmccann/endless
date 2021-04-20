@@ -10,6 +10,12 @@ You can run the application with the `yarn start` command.
 
 Run `yarn test` in order to run the test suite.
 
-### Spinner Animation
+##Some Choices Made
+I chose to use a splash screen on a timeout function so that all images and api calls have already loaded when a user sees the full site. 
 
-By Loading.io (it and others can be found [here](https://loading.io/css/))
+In case of very, very slow internet there is still a fallback for the hero that loads a solid color box (I chose a dark color from the image to make the transition easier on the eyes) until the image has loaded. 
+
+The animated loader featured on the splash page will also display in the place of the steps content if the api call has not returned by the splash page timeout. 
+
+To view those ui features in their natural habitat, comment out the Splash component in App.js. 
+

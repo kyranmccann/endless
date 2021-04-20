@@ -41,6 +41,7 @@ p {
   margin-top: 3.7rem;
 }
 
+/* media queries */
 @media (max-width: 1165px) {
   h5 {
     font-size: 1.4rem;
